@@ -73,11 +73,6 @@
             this.sPProdOrderQueryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetP1C = new SmartMES_SinMyung.P1C.DataSetP1C();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.sPProdOrderProcBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sP_ProdOrder_ProcTableAdapter = new SmartMES_SinMyung.P1C.DataSetP1CTableAdapters.SP_ProdOrder_ProcTableAdapter();
-            this.sP_ProdOrder_QueryTableAdapter = new SmartMES_SinMyung.P1C.DataSetP1CTableAdapters.SP_ProdOrder_QueryTableAdapter();
-            this.sPProdOrderPrintBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sP_ProdOrder_PrintTableAdapter = new SmartMES_SinMyung.P1C.DataSetP1CTableAdapters.SP_ProdOrder_PrintTableAdapter();
             this.lot번호DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.공정번호DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.공정명DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +83,11 @@
             this.지시수량DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.작업지도DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.완료여부DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sPProdOrderProcBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sP_ProdOrder_ProcTableAdapter = new SmartMES_SinMyung.P1C.DataSetP1CTableAdapters.SP_ProdOrder_ProcTableAdapter();
+            this.sP_ProdOrder_QueryTableAdapter = new SmartMES_SinMyung.P1C.DataSetP1CTableAdapters.SP_ProdOrder_QueryTableAdapter();
+            this.sPProdOrderPrintBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sP_ProdOrder_PrintTableAdapter = new SmartMES_SinMyung.P1C.DataSetP1CTableAdapters.SP_ProdOrder_PrintTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pbPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDel)).BeginInit();
@@ -173,7 +173,7 @@
             this.tbSearch.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tbSearch.Location = new System.Drawing.Point(724, 19);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(176, 29);
+            this.tbSearch.Size = new System.Drawing.Size(180, 29);
             this.tbSearch.TabIndex = 3;
             this.tbSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbSearch_KeyUp);
             // 
@@ -516,28 +516,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(1319, 423);
             this.dataGridView2.TabIndex = 12;
             // 
-            // sPProdOrderProcBindingSource
-            // 
-            this.sPProdOrderProcBindingSource.DataMember = "SP_ProdOrder_Proc";
-            this.sPProdOrderProcBindingSource.DataSource = this.dataSetP1C;
-            // 
-            // sP_ProdOrder_ProcTableAdapter
-            // 
-            this.sP_ProdOrder_ProcTableAdapter.ClearBeforeFill = true;
-            // 
-            // sP_ProdOrder_QueryTableAdapter
-            // 
-            this.sP_ProdOrder_QueryTableAdapter.ClearBeforeFill = true;
-            // 
-            // sPProdOrderPrintBindingSource
-            // 
-            this.sPProdOrderPrintBindingSource.DataMember = "SP_ProdOrder_Print";
-            this.sPProdOrderPrintBindingSource.DataSource = this.dataSetP1C;
-            // 
-            // sP_ProdOrder_PrintTableAdapter
-            // 
-            this.sP_ProdOrder_PrintTableAdapter.ClearBeforeFill = true;
-            // 
             // lot번호DataGridViewTextBoxColumn
             // 
             this.lot번호DataGridViewTextBoxColumn.DataPropertyName = "Lot번호";
@@ -632,6 +610,28 @@
             this.완료여부DataGridViewTextBoxColumn.Name = "완료여부DataGridViewTextBoxColumn";
             this.완료여부DataGridViewTextBoxColumn.ReadOnly = true;
             this.완료여부DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // sPProdOrderProcBindingSource
+            // 
+            this.sPProdOrderProcBindingSource.DataMember = "SP_ProdOrder_Proc";
+            this.sPProdOrderProcBindingSource.DataSource = this.dataSetP1C;
+            // 
+            // sP_ProdOrder_ProcTableAdapter
+            // 
+            this.sP_ProdOrder_ProcTableAdapter.ClearBeforeFill = true;
+            // 
+            // sP_ProdOrder_QueryTableAdapter
+            // 
+            this.sP_ProdOrder_QueryTableAdapter.ClearBeforeFill = true;
+            // 
+            // sPProdOrderPrintBindingSource
+            // 
+            this.sPProdOrderPrintBindingSource.DataMember = "SP_ProdOrder_Print";
+            this.sPProdOrderPrintBindingSource.DataSource = this.dataSetP1C;
+            // 
+            // sP_ProdOrder_PrintTableAdapter
+            // 
+            this.sP_ProdOrder_PrintTableAdapter.ClearBeforeFill = true;
             // 
             // P1C01_PROD_ORDER
             // 
